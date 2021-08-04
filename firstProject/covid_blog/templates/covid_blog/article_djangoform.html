@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TArun's First DjangoForm</title>
+</head>
+<body>
+
+	<form action="article-djangoform" method="post" enctype="multipart/form-data">
+		{% csrf_token %}
+		
+		{{ djangoform }}
+		<input type="submit" value="Submit">
+
+
+	</form>
+		
+
+</body>
+</html>

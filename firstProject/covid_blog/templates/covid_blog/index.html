@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Covid Blogs Homepage</h2>
+<p>This is your Covid Blog</p>
+
+<ul>
+	{% for item in all_articles %}
+		
+		<li>
+			<a href="details/{{ item.id }}">{{ item.title }}</a>
+		</li>
+	
+	{% endfor %}
+</ul>
+
+<a href="submit-article">Submit New Article</a><br>
+<a href="article-djangoform">Submit New Article (Trough Django-Forms)</a>
+
+
+</body>
+</html>
